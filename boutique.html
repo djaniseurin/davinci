@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="boutique.title">DA VINCI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header id="header">
+        <div class="header-left">
+            <a href="home.html" aria-label="Retour à l'accueil">
+                <img src="assets/header/logo.png" class="logo" alt="Logo DA VINCI" data-i18n-alt="media.logo">
+            </a>
+        </div>
+        <div class="header-center">
+            <h1><a class="home-link" href="home.html">DA VINCI</a></h1>
+        </div>
+        <div class="header-right">
+<div class="lang-wrapper">
+                <button class="lang-btn" id="lang-btn" aria-label="Changer de langue" aria-expanded="false">
+                    <img src="assets/header/internet.png" class="icon" alt="Langue" data-i18n-alt="media.nav.lang">
+                </button>
+                <ul class="lang-menu" id="lang-menu" role="menu">
+                    <li role="menuitem" data-lang="fr">FR</li>
+                    <li role="menuitem" data-lang="en">EN</li>
+                    <li role="menuitem" data-lang="de">DE</li>
+                    <li role="menuitem" data-lang="it">IT</li>
+                </ul>
+            </div>
+
+            <a href="collections.html" aria-label="Collections">
+                <img src="assets/header/watch.png" class="icon" alt="Collections" data-i18n-alt="media.nav.collections">
+            </a>
+            <a href="boutique.html" aria-label="Boutiques">
+                <img src="assets/header/broche-de-localisation.png" class="icon" alt="Boutiques" data-i18n-alt="media.nav.boutiques">
+            </a>
+            <a href="login.html" aria-label="Compte">
+                <img src="assets/header/utilisateur.png" class="icon" alt="Compte" data-i18n-alt="media.nav.account">
+            </a>
+        </div>
+    </header>
+
+
+
+
+<section class="boutiques-layout">
+
+    <!-- INFOS -->
+    <div class="boutique-info">
+        <span class="label" data-i18n="boutique.label">BOUTIQUE</span>
+
+        <h1 id="shop-name" data-i18n-html="shop.paris.name">DA VINCI PARIS</h1>
+
+        <div class="divider"></div>
+
+        <div class="info-block">
+            <p id="shop-address" data-i18n-html="shop.paris.address">
+                12 Rue de la Paix<br>
+                75002 Paris, France
+            </p>
+
+            <p id="shop-hours" data-i18n-html="shop.paris.hours">
+                Lundi – Samedi<br>
+                10h00 – 19h00
+            </p>
+        </div>
+
+        <a href="rdv.html" class="shop-btn" data-i18n="boutique.cta">
+            PRENDRE RENDEZ-VOUS
+        </a>
+    </div>
+
+    <!-- CARTE -->
+    <div class="map-wrapper">
+        <div id="shop-map"></div>
+    </div>
+
+</section>
+
+
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Script carte -->
+<script src="script.js" defer></script>
+
+<footer class="site-footer">
+        <div class="footer-categories">
+            <a href="collections.html" data-i18n="footer.collections">Collections</a>
+            <a href="histoire.html" data-i18n="footer.story">Histoire</a>
+            <a href="rdv.html" data-i18n="footer.services">Services</a>
+            <a href="boutique.html" data-i18n="footer.boutiques">Boutiques</a>
+        </div>
+
+        <div class="footer-logos" aria-hidden="true">
+            <img src="assets/footer/instagram.png" class="footer-logo" alt="Instagram">
+            <img src="assets/footer/tiktok.png" class="footer-logo" alt="TikTok">
+            <img src="assets/footer/x.png" class="footer-logo" alt="X">
+            <img src="assets/footer/youtube.png" class="footer-logo" alt="YouTube">
+        </div>
+
+        <div class="footer-copy">© 2026 DA VINCI</div>
+        <div class="footer-right">
+            <a href="conditions.html" data-i18n="footer.terms">Conditions</a>
+            <a href="confidentialite.html" data-i18n="footer.privacy">Confidentialité</a>
+            <a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+        </div>
+        <div class="footer-disclaimer">Ce site n'est pas réel. Projet de formation présenté dans un portfolio.</div>
+    </footer>
+
+    <script src="translations.js" defer></script>
+    <script src="i18n.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="collections.title">Collections de Montres de Luxe - DA VINCI</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Découvrez la collection de montres de luxe DA VINCI, alliant création artistique et précision horlogère. Chaque montre raconte une histoire et incarne l'excellence artisanale.">
+    <link rel="stylesheet" href="collections.css">
+    <!-- Polices élégantes pour l'univers du luxe -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Crimson+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Crimson Pro', serif; margin:0; padding:0; background: black; color: white; line-height:1.6; }
+        a { text-decoration:none; color:inherit; }
+        h1 { font-family:'Cormorant Garamond', serif; font-size:clamp(26px, 3.5vw, 40px); margin-bottom:20px; text-align:center; color: white; }
+        p { font-size:clamp(14px, 1.4vw, 18px); max-width:min(92vw, 980px); margin:0 auto 40px; text-align:center; color: white; }
+        .collections-container { padding:clamp(80px, 10vh, 140px) clamp(16px, 4vw, 80px) clamp(60px, 8vh, 120px); }
+        .collections-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:clamp(18px, 3vw, 36px); max-width:min(100%, 1400px); margin:0 auto; }
+        .watch-card { position:relative; overflow:hidden; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.08); transition:transform 0.3s, box-shadow 0.3s; }
+        .watch-card:hover { transform:translateY(-5px); box-shadow:0 15px 35px rgba(0,0,0,0.12); }
+        .watch-card img { width:100%; height:auto; aspect-ratio:3/4; display:block; border-radius:12px; }
+        .watch-overlay { position:absolute; bottom:0; left:0; width:100%; padding:20px; background:linear-gradient(0deg, rgba(0,0,0,0.7), transparent); color:#fff; opacity:0; transition:opacity 0.3s; }
+        .watch-card:hover .watch-overlay { opacity:1; }
+        .watch-overlay h3 { font-size:20px; margin-bottom:5px; }
+        .watch-overlay span { font-size:14px; font-weight:500; letter-spacing:0.5px; }
+        @media(max-width:768px) {
+            h1 { font-size:28px; }
+            p { font-size:15px; }
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+        <div class="header-left">
+            <a href="home.html" aria-label="Retour à l'accueil">
+                <img src="assets/header/logo.png" class="logo" alt="Logo DA VINCI" data-i18n-alt="media.logo">
+            </a>
+        </div>
+        <div class="header-center">
+            <h1><a class="home-link" href="home.html">DA VINCI</a></h1>
+        </div>
+        <div class="header-right">
+<div class="lang-wrapper">
+                <button class="lang-btn" id="lang-btn" aria-label="Changer de langue" aria-expanded="false">
+                    <img src="assets/header/internet.png" class="icon" alt="Langue" data-i18n-alt="media.nav.lang">
+                </button>
+                <ul class="lang-menu" id="lang-menu" role="menu">
+                    <li role="menuitem" data-lang="fr">FR</li>
+                    <li role="menuitem" data-lang="en">EN</li>
+                    <li role="menuitem" data-lang="de">DE</li>
+                    <li role="menuitem" data-lang="it">IT</li>
+                </ul>
+            </div>
+
+            <a href="collections.html" aria-label="Collections">
+                <img src="assets/header/watch.png" class="icon" alt="Collections" data-i18n-alt="media.nav.collections">
+            </a>
+            <a href="boutique.html" aria-label="Boutiques">
+                <img src="assets/header/broche-de-localisation.png" class="icon" alt="Boutiques" data-i18n-alt="media.nav.boutiques">
+            </a>
+            <a href="login.html" aria-label="Compte">
+                <img src="assets/header/utilisateur.png" class="icon" alt="Compte" data-i18n-alt="media.nav.account">
+            </a>
+        </div>
+    </header>
+
+
+
+
+<main class="collections-container">
+    <h1 data-i18n="collections.h1">Découvrez notre collection de montres de luxe</h1>
+    <p data-i18n-html="collections.desc">
+        Chez <strong>DA VINCI</strong>, chaque montre de luxe est une véritable <strong>œuvre d’art horlogère</strong>. Née de la rencontre entre la <strong>création artistique</strong> et la <strong>précision horlogère</strong>, notre collection rend hommage aux plus grands maîtres et aux émotions intemporelles qu’ils ont su capturer.<br><br>
+        
+        Chaque pièce est pensée comme un tableau à porter au poignet : des lignes inspirées de l’histoire de l’art, des détails façonnés avec exigence et un mécanisme où le <strong>temps devient expression</strong>. Nos montres ne se contentent pas de mesurer l’heure : elles racontent une histoire, traduisent une vision et célèbrent l’alliance parfaite entre <strong>art, design horloger et élégance intemporelle</strong>.<br><br>
+        
+        Explorez l’univers <strong>DA VINCI</strong> et découvrez le temps autrement grâce à des montres de prestige qui incarnent l’<strong>excellence artisanale</strong>, le <strong>design raffiné</strong> et la <strong>haute horlogerie de luxe</strong>. Chaque création est pensée pour ceux qui recherchent la beauté, la précision et l’émotion dans chaque seconde.
+    </p>
+
+    <div class="collections-grid">
+        <div class="watch-card">
+            <a href="monet.html">
+                <img src="assets/monet/monetwatch-removebg-preview.webp" alt="Montre La Promenade - vue principale" data-i18n-alt="media.collections.monet">
+                <div class="watch-overlay">
+                    <h3 data-i18n="collections.monet">La Promenade</h3>
+                    <span data-i18n="collections.view">Voir la montre</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="watch-card">
+            <a href="picasso.html">
+                <img src="assets/picasso/picassowatch-removebg-preview.webp" alt="Montre Guernica - vue principale" data-i18n-alt="media.collections.picasso">
+                <div class="watch-overlay">
+                    <h3 data-i18n="collections.picasso">Guernica</h3>
+                    <span data-i18n="collections.view">Voir la montre</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="watch-card">
+            <a href="vangogh.html">
+                <img src="assets/vangogh/vangoghwatch-removebg-preview.webp" alt="Montre Nuit Étoilée - vue principale" data-i18n-alt="media.collections.vangogh">
+                <div class="watch-overlay">
+                    <h3 data-i18n="collections.vangogh">Nuit Étoilée</h3>
+                    <span data-i18n="collections.view">Voir la montre</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="watch-card">
+            <a href="lapin.html">
+                <img src="assets/lapin/NivinsMcTwispWatch-removebg-preview.webp" alt="Montre Chronosphère - vue principale" data-i18n-alt="media.collections.lapin">
+                <div class="watch-overlay">
+                    <h3 data-i18n="collections.lapin">Chronosphère</h3>
+                    <span data-i18n="collections.view">Voir la montre</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="collections-scroll-hint" aria-hidden="true">
+        <span class="hint-label">Scroll</span>
+        <span class="hint-line"></span>
+    </div>
+</main>
+
+
+
+<script src="script.js" defer></script>
+
+<footer class="site-footer">
+        <div class="footer-categories">
+            <a href="collections.html" data-i18n="footer.collections">Collections</a>
+            <a href="histoire.html" data-i18n="footer.story">Histoire</a>
+            <a href="rdv.html" data-i18n="footer.services">Services</a>
+            <a href="boutique.html" data-i18n="footer.boutiques">Boutiques</a>
+        </div>
+
+        <div class="footer-logos" aria-hidden="true">
+            <img src="assets/footer/instagram.png" class="footer-logo" alt="Instagram">
+            <img src="assets/footer/tiktok.png" class="footer-logo" alt="TikTok">
+            <img src="assets/footer/x.png" class="footer-logo" alt="X">
+            <img src="assets/footer/youtube.png" class="footer-logo" alt="YouTube">
+        </div>
+
+        <div class="footer-copy">© 2026 DA VINCI</div>
+        <div class="footer-right">
+            <a href="conditions.html" data-i18n="footer.terms">Conditions</a>
+            <a href="confidentialite.html" data-i18n="footer.privacy">Confidentialité</a>
+            <a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+        </div>
+        <div class="footer-disclaimer">Ce site n'est pas réel. Projet de formation présenté dans un portfolio.</div>
+    </footer>
+
+    <script src="translations.js" defer></script>
+    <script src="i18n.js" defer></script>
+</body>
+</html>

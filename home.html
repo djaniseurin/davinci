@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="home.title">DA VINCI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Cormorant Garamond et Crimson Pro -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Crimson+Pro:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@1,400&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+<header id="header">
+        <div class="header-left">
+            <a href="home.html" aria-label="Retour à l'accueil">
+                <img src="assets/header/logo.png" class="logo" alt="Logo DA VINCI" data-i18n-alt="media.logo">
+            </a>
+        </div>
+        <div class="header-center">
+            <h1><a class="home-link" href="home.html">DA VINCI</a></h1>
+        </div>
+        <div class="header-right">
+<div class="lang-wrapper">
+                <button class="lang-btn" id="lang-btn" aria-label="Changer de langue" aria-expanded="false">
+                    <img src="assets/header/internet.png" class="icon" alt="Langue" data-i18n-alt="media.nav.lang">
+                </button>
+                <ul class="lang-menu" id="lang-menu" role="menu">
+                    <li role="menuitem" data-lang="fr">FR</li>
+                    <li role="menuitem" data-lang="en">EN</li>
+                    <li role="menuitem" data-lang="de">DE</li>
+                    <li role="menuitem" data-lang="it">IT</li>
+                </ul>
+            </div>
+
+            <a href="collections.html" aria-label="Collections">
+                <img src="assets/header/watch.png" class="icon" alt="Collections" data-i18n-alt="media.nav.collections">
+            </a>
+            <a href="boutique.html" aria-label="Boutiques">
+                <img src="assets/header/broche-de-localisation.png" class="icon" alt="Boutiques" data-i18n-alt="media.nav.boutiques">
+            </a>
+            <a href="login.html" aria-label="Compte">
+                <img src="assets/header/utilisateur.png" class="icon" alt="Compte" data-i18n-alt="media.nav.account">
+            </a>
+        </div>
+    </header>
+
+
+<!-- Section vidéo 1 -->
+<section class="hero hero-right-focus">
+    <video autoplay muted loop playsinline aria-label="Vidéo d’ambiance hivernale DA VINCI" title="DA VINCI – ambiance hivernale" data-i18n-aria-label="media.home.video.winter.label" data-i18n-title="media.home.video.winter.title">
+        <source src="assets/video/lapie.mp4" type="video/mp4">
+    </video>
+
+    <!-- Texte bas gauche -->
+    <div class="hero-text bottom-left">
+        <h2 data-i18n="home.hero1.title">JOYEUX HIVER</h2>
+        <p data-i18n="home.hero1.subtitle">DA FIRENZE</p>
+    </div>
+</section>
+
+<!-- Section vidéo 2 -->
+<section class="hero">
+    <video autoplay muted loop playsinline aria-label="Vidéo ADN de la Maison DA VINCI" title="DA VINCI – ADN de la Maison" data-i18n-aria-label="media.home.video.adn.label" data-i18n-title="media.home.video.adn.title">
+        <source src="assets/video/adn.mov" type="video/mp4">
+    </video>
+
+    <!-- Texte haut droite -->
+    <div class="hero-text top-right">
+        <h2 data-i18n-html="home.hero2.title">QUAND LE TEMPS <br>DEVIENT ART</h2>
+        <p data-i18n="home.hero2.desc">Da Vinci est née d’un rêve : unir l’art et l’horlogerie pour créer des montres qui allient beauté et précision.</p>
+        <a href="histoire.html" class="btn" data-i18n="common.learn_more">En savoir plus</a>
+    </div>
+</section>
+
+<section class="hero">
+    <video autoplay muted loop playsinline aria-label="Vidéo signature DA VINCI - Nuit Étoilée" title="DA VINCI – Nuit Étoilée" data-i18n-aria-label="media.home.video.signature.label" data-i18n-title="media.home.video.signature.title">
+        <source src="assets/video/signature.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-text bottom-left">
+        <h2 data-i18n-html="home.hero3.title">LA NUIT ÉTOILÉE <br>LA FENÊTRE AUX ÉTOILES</h2>
+        <p data-i18n="home.hero3.desc">Inspirée du ciel que Van Gogh contemplait depuis sa chambre, La Nuit Étoilée capture la poésie d’une nuit vibrante et lumineuse. Une montre qui fait briller l’art à votre poignet.</p>
+        <a href="vangogh.html" class="btn" data-i18n="common.learn_more">En savoir plus</a>
+    </div>
+</section>
+
+<section class="text-images full-screen services-carousel">
+    <div class="text-left">
+        <h2 data-i18n-html="home.section1.title">CHAQUE INSTANT <br>DEVIENS UNE TOILE <br>À CONTEMPLER</h2>
+        <p data-i18n-html="home.section1.desc">
+Plongez dans l’univers Da Vinci<BR>
+Découvrez un monde où chaque création s’inspire des maîtres de l’art <BR>et de leurs émotions intemporelles. De la douceur lumineuse de Monet<BR> à la puissance expressive de Picasso, nos collections rendent hommage <BR>aux œuvres qui ont marqué l’histoire.<BR><BR>
+
+Chaque montre capture une atmosphère unique, une vision artistique, <BR>un mouvement subtil comme un fragment d’art que l’on porterait au poignet.<BR> Explorez nos collections et laissez-vous séduire par la poésie des couleurs<BR> la force des formes et la beauté des détails.</p>
+    </div>
+
+    <div class="images-right">
+        <div class="image-wrapper">
+            <a href="monet.html" class="image-button">
+                <img src="assets/monet/monetwatch-removebg-preview.webp" alt="Montre La Promenade - vue principale" data-i18n-alt="media.home.monet">
+            </a>
+            <p class="image-caption" data-i18n-html="home.monet.caption">Montre La Promenade <br>La lumière capturée au poignet <br><br>Née d’un souffle de vent et d’un ciel en mouvement,
+La Promenade peint le temps avec la douceur de Monet.
+Chaque seconde y devient une caresse de lumière,
+une invitation à marcher dans l’éternité des couleurs.</p>
+        </div>
+        <div class="image-wrapper">
+            <a href="picasso.html" class="image-button">
+                <img src="assets/picasso/picassowatch-removebg-preview.webp" alt="Montre Guernica - vue principale" data-i18n-alt="media.home.picasso">
+            </a>
+            <p class="image-caption" data-i18n-html="home.picasso.caption">Montre Guernica <br>L’éclat du chaos sculpté dans le temps <br><br>Née d’un fragment de révolte et de beauté,
+la Montre Guernica capture l’âme cubiste en mouvement.
+Ses lignes brisées s’entrelacent au silence du métal,
+faisant vibrer chaque seconde
+comme un battement d’art et de liberté.</p>
+        </div>
+    </div>
+    <div class="carousel-hint" aria-hidden="true">
+        <span class="hint-label">Scroll</span>
+        <span class="hint-line"></span>
+    </div>
+</section>
+
+<section class="hero-image">
+    <img src="lapinbackground.webp" alt="Montre Chronosphère en pleine page" data-i18n-alt="media.home.hero.chronosphere">
+
+    <div class="hero-overlay">
+        <h2 data-i18n-html="home.hero4.title">LA CHRONOSPHÈRE <br>L’HEURE DES MERVEILLES</h2>
+        <p data-i18n-html="home.hero4.desc">Cette montre inspirée de l’univers de Nivins McTwisp <br>ne se contemple pas comme un tableau,<br>
+mais elle n’en demeure pas moins une œuvre d’art à part entière.<br>
+Approchez… et laissez-vous surprendre<br>par une création où l’art ne se peint pas : il se raconte.</p>
+        <a href="lapin.html" class="btn" data-i18n="common.learn_more">En savoir plus</a>
+    </div>
+</section>
+
+<section class="text-images full-screen">
+    <div class="text-left">
+        <h2 data-i18n-html="home.services.title">DÉCOUVREZ NOS SERVICES<BR> DA VINCI</h2>
+        <P data-i18n-html="home.services.desc">
+            Chez Da Vinci, nous offrons bien plus que des montres de luxe : nous proposons une expérience unique et personnalisée pour chaque passionné d’horlogerie. Nos services sont conçus pour sublimer la rencontre entre l’art et le temps, tout en vous offrant un accompagnement sur-mesure.<BR><BR>
+
+Prise de rendez-vous pour découvrir nos collections
+Plongez dans l’univers Da Vinci en réservant un rendez-vous dans l’une de nos boutiques ou ateliers exclusifs. Nos experts vous guideront à travers nos collections de montres de luxe, vous présenteront les modèles emblématiques et vous aideront à choisir la pièce qui reflète le mieux votre style et vos goûts. Chaque rendez-vous est pensé comme une visite privée, où l’art et l’horlogerie se rencontrent dans un cadre élégant et inspirant.<BR><BR>
+
+Prise de rendez-vous pour l’entretien de votre montre<BR>
+Votre montre Da Vinci mérite un soin attentif pour garantir sa durabilité et son bon fonctionnement. Grâce à notre service de prise de rendez-vous pour entretien ou révision, nos horlogers spécialisés prennent soin de chaque détail de votre garde-temps. Qu’il s’agisse d’un réglage mécanique, d’une révision complète ou d’une réparation spécifique, nous assurons un suivi précis et un service de qualité, fidèle à l’excellence Da Vinci.
+        </P>
+    </div>
+
+    <div class="images-right">
+        <div class="image-wrapper">
+            <a href="rdv.html" class="image-button">
+                <img src="rdv.webp" alt="Prise de rendez-vous en boutique DA VINCI" data-i18n-alt="media.home.rdv">
+            </a>
+            <p class="image-caption" data-i18n-html="home.service1.caption">PRENEZ RENDEZ-VOUS <br><br> Venez découvrir nos créations en personne et laissez chaque instant vous raconter notre savoir-faire horloger</p>
+        </div>
+        <div class="image-wrapper">
+            <a href="rdv.html" class="image-button">
+                <img src="services.webp" alt="Service après-vente horlogerie DA VINCI" data-i18n-alt="media.home.services">
+            </a>
+            <p class="image-caption" data-i18n-html="home.service2.caption">ENTRENEZ <br>NOS  CHEF-D’OEUVRE<br><br>Assurez la longévité et la précision de votre montre grâce à notre service après-vente dédiée</p>
+        </div>
+    </div>
+    <div class="carousel-hint" aria-hidden="true">
+        <span class="hint-label">Scroll</span>
+        <span class="hint-line"></span>
+    </div>
+</section>
+
+<section class="split-section">
+    <!-- IMAGE À GAUCHE -->
+    <div class="split-image">
+        <img src="boutique.webp" alt="Boutique DA VINCI - intérieur" data-i18n-alt="media.home.boutique">
+    </div>
+
+    <!-- TEXTE À DROITE -->
+    <div class="split-text">
+        <h2 data-i18n-html="home.boutique.title">TROUVEZ <br>VOTRE BOUTIQUE</h2>
+        <p data-i18n-html="home.boutique.desc">Plongez dans un univers où le temps rencontre l’art. <br><br>Nos boutiques, conçues comme de véritables galeries horlogères, vous invitent à découvrir chaque création sous un regard unique, accompagnés par des conseillers dédiés à l’expérience et à l’émotion.</p>
+
+        <a href="boutique.html" class="btn" data-i18n="common.discover_boutiques">
+            DÉCOUVRIR NOS BOUTIQUES
+        </a>
+    </div>
+</section>
+
+<section class="white-section">
+    <!-- Texte en haut gauche / droite -->
+    <div class="white-top">
+        <p class="top-left" data-i18n-html="home.newsletter.left">RECEVEZ NOS <br>DERNIÈRES CRÉATION</p>
+        <p class="top-right" data-i18n-html="home.newsletter.right">Actualités, nouveautés <br>et inspirations horlogères</p>
+    </div>
+
+    <!-- Rectangle noir comme bouton -->
+    <a href="login.html" class="black-rectangle">
+        <span class="black-text" data-i18n="common.subscribe">
+            S'ABONNER
+        </span>
+    </a>
+</section>
+
+
+
+
+<!-- BANNIÈRE COOKIES PREMIUM -->
+<div id="cookie-banner" class="cookie-banner">
+    <h1 data-i18n="home.cookie.title">Le respect de votre vie privée est notre priorité</h1>
+  <p data-i18n="home.cookie.text">
+Nous et nos  partenaires stockons et/ou accédons à des informations sur un appareil, telles que les cookies, et traitons des données personnelles telles que des identifiants uniques et des informations standards envoyées par un appareil pour des publicités et du contenu personnalisés, des mesures de publicité et de contenu, des études d'audience et le développement de services.
+  </p>
+  <div class="cookie-buttons">
+    <button id="accept-cookies" data-i18n="common.accept">Accepter</button>
+    <a href="cookies.html" data-i18n="common.more_info">En savoir plus</a>
+  </div>
+</div>
+
+<style>
+/* Banniere principale */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(0,0,0,0.9);
+  color: #fff;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Crimson Pro', serif;
+  font-size: 16px;
+  z-index: 9999;
+  opacity: 1;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 -5px 30px rgba(0,0,0,0.5);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cookie-banner h1 {
+    color : white;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Texte */
+.cookie-banner p {
+  flex: 1 1 60%;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Boutons */
+.cookie-buttons {
+  display: flex;
+  gap: 15px;
+  flex: 1 1 0.3%;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.cookie-buttons button,
+.cookie-buttons a {
+  padding: 12px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Crimson Pro', serif;
+}
+
+.cookie-buttons button {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.cookie-buttons a {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+
+.cookie-buttons button:hover,
+.cookie-buttons a:hover {
+  background: rgba(255,255,255,0.15);
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cookie-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  .cookie-buttons {
+    justify-content: center;
+  }
+  .cookie-buttons button,
+  .cookie-buttons a {
+    width: 80%;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const banner = document.getElementById('cookie-banner');
+  const btnAccept = document.getElementById('accept-cookies');
+
+  // Fermer le bandeau au clic sur Accepter
+  btnAccept.addEventListener('click', () => {
+    banner.style.transform = 'translateX(-50%) translateY(150px)';
+    banner.style.opacity = '0';
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const banner = document.getElementById("cookie-banner");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  // ✅ Si déjà accepté → on ne montre PAS le bandeau
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    banner.style.display = "none";
+    return;
+  }
+
+  // ✅ Sinon, on affiche le bandeau
+  banner.style.display = "flex";
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+
+    banner.style.transform = "translateY(120px)";
+    banner.style.opacity = "0";
+
+    setTimeout(() => {
+      banner.style.display = "none";
+    }, 500);
+  });
+});
+</script>
+
+
+<script src="script.js" defer></script>
+
+<footer class="site-footer">
+        <div class="footer-categories">
+            <a href="collections.html" data-i18n="footer.collections">Collections</a>
+            <a href="histoire.html" data-i18n="footer.story">Histoire</a>
+            <a href="rdv.html" data-i18n="footer.services">Services</a>
+            <a href="boutique.html" data-i18n="footer.boutiques">Boutiques</a>
+        </div>
+
+        <div class="footer-logos" aria-hidden="true">
+            <img src="assets/footer/instagram.png" class="footer-logo" alt="Instagram">
+            <img src="assets/footer/tiktok.png" class="footer-logo" alt="TikTok">
+            <img src="assets/footer/x.png" class="footer-logo" alt="X">
+            <img src="assets/footer/youtube.png" class="footer-logo" alt="YouTube">
+        </div>
+
+        <div class="footer-copy">© 2026 DA VINCI</div>
+        <div class="footer-right">
+            <a href="conditions.html" data-i18n="footer.terms">Conditions</a>
+            <a href="confidentialite.html" data-i18n="footer.privacy">Confidentialité</a>
+            <a href="cookies.html" data-i18n="footer.cookies">Cookies</a>
+        </div>
+        <div class="footer-disclaimer">Ce site n'est pas réel. Projet de formation présenté dans un portfolio.</div>
+    </footer>
+
+    <script src="translations.js" defer></script>
+    <script src="i18n.js" defer></script>
+</body>
+</html>

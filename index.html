@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DA VINCI</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@1,400&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* --- Page blanche et centrée --- */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            font-family: 'Libre Baskerville', serif;
+            overflow: hidden;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .splash-main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .splash-container {
+            text-align: center;
+        }
+
+        /* --- Logo --- */
+        .splash-logo {
+            width: 120px;
+            height: auto;
+            opacity: 0;
+            transform: scale(0.5);
+            animation: logoAppear 1s forwards;
+        }
+
+        @keyframes logoAppear {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* --- Nom de la marque --- */
+        .splash-name {
+            font-size: 3rem;
+            font-style: italic;
+            font-weight: 400;
+            letter-spacing: 5px;
+            color: #111;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: nameAppear 1s forwards;
+            animation-delay: 0.8s;
+        }
+
+        @keyframes nameAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- Animation de fade out pour passer à la page principale --- */
+        .fade-out {
+            animation: fadeOut 0.8s forwards;
+            animation-delay: 2s; /* temps avant transition */
+        }
+
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="splash-main">
+        <div class="splash-container" id="splash">
+            <img src="assets/header/logo.png" class="splash-logo" alt="Logo DA VINCI" data-i18n-alt="media.logo">
+            <h1 class="splash-name">DA VINCI</h1>
+        </div>
+    </main>
+
+    <script>
+        // Après animation, redirige vers la page principale
+        setTimeout(() => {
+            const splash = document.getElementById('splash');
+            splash.classList.add('fade-out');
+            // Redirection après fade
+            setTimeout(() => {
+                window.location.href = 'home.html'; // page principale
+            }, 800);
+        }, 2000); // durée avant fade
+    </script>
+</body>
+</html>
