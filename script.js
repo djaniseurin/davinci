@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
             doubleClickZoom: false,
             boxZoom: false,
             keyboard: false
-        }).setView([48.8, 6.8], 5);
+        });
 
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
             attribution: ''
@@ -159,6 +159,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 renderShop(key);
             });
         });
+
+        const bounds = L.latLngBounds(Object.values(shops).map((shop) => shop.coords));
+        map.fitBounds(bounds, { padding: [100, 100] });
+        map.zoomOut(1);
 
         renderShop(lastShopKey);
 

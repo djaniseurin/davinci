@@ -115,6 +115,22 @@
     getLanguage
   };
 
+  const moveLangToFooter = () => {
+    const langWrapper = document.querySelector(".lang-wrapper");
+    const headerRight = document.querySelector(".header-right");
+    const footerSlot = document.querySelector(".footer-lang-slot");
+    if (!langWrapper || !headerRight || !footerSlot) return;
+
+    const isMobile = window.matchMedia("(max-width: 900px)").matches;
+    if (isMobile) {
+      if (!footerSlot.contains(langWrapper)) {
+        footerSlot.appendChild(langWrapper);
+      }
+    } else if (!headerRight.contains(langWrapper)) {
+      headerRight.appendChild(langWrapper);
+    }
+  };
+
   const initI18n = () => {
     const saved = localStorage.getItem(storageKey);
     const initial = saved || getDefaultLang();
@@ -123,29 +139,44 @@
     const langBtn = document.getElementById("lang-btn");
     const langMenu = document.getElementById("lang-menu");
 
-    if (langBtn && langMenu) {
-      langBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        langMenu.classList.toggle("show");
-        langBtn.setAttribute("aria-expanded", langMenu.classList.contains("show"));
-      });
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest(".lang-btn");
+      const item = e.target.closest(".lang-menu li");
 
-      document.addEventListener("click", (e) => {
-        if (!langBtn.contains(e.target) && !langMenu.contains(e.target)) {
-          langMenu.classList.remove("show");
-          langBtn.setAttribute("aria-expanded", "false");
-        }
-      });
+      if (item) {
+        const wrapper = item.closest(".lang-wrapper");
+        const menu = wrapper ? wrapper.querySelector(".lang-menu") : null;
+        const button = wrapper ? wrapper.querySelector(".lang-btn") : null;
+        const lang = item.dataset.lang;
+        setLanguage(lang);
+        menu?.classList.remove("show");
+        wrapper?.classList.remove("open");
+        button?.setAttribute("aria-expanded", "false");
+        return;
+      }
 
-      langMenu.querySelectorAll("li").forEach((item) => {
-        item.addEventListener("click", () => {
-          const lang = item.dataset.lang;
-          setLanguage(lang);
-          langMenu.classList.remove("show");
-          langBtn.setAttribute("aria-expanded", "false");
-        });
+      if (btn) {
+        e.preventDefault();
+        const wrapper = btn.closest(".lang-wrapper");
+        const menu = wrapper ? wrapper.querySelector(".lang-menu") : null;
+        if (!wrapper || !menu) return;
+        menu.classList.toggle("show");
+        const isOpen = menu.classList.contains("show");
+        wrapper.classList.toggle("open", isOpen);
+        btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        return;
+      }
+
+      document.querySelectorAll(".lang-menu.show").forEach((menu) => {
+        menu.classList.remove("show");
       });
-    }
+      document.querySelectorAll(".lang-wrapper.open").forEach((wrapper) => {
+        wrapper.classList.remove("open");
+      });
+    });
+
+    moveLangToFooter();
+    window.addEventListener("resize", moveLangToFooter);
   };
 
   if (document.readyState === "loading") {

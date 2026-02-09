@@ -12,8 +12,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@1,400&display=swap" rel="stylesheet">
 
 
+    <link rel="stylesheet" href="mobile.css">
 </head>
-<body>
+<body class="page-home">
 
 <header id="header">
         <div class="header-left">
@@ -28,6 +29,7 @@
 <div class="lang-wrapper">
                 <button class="lang-btn" id="lang-btn" aria-label="Changer de langue" aria-expanded="false">
                     <img src="assets/header/internet.png" class="icon" alt="Langue" data-i18n-alt="media.nav.lang">
+                                    <span class="lang-label" data-i18n="common.change_language">Changer la langue</span>
                 </button>
                 <ul class="lang-menu" id="lang-menu" role="menu">
                     <li role="menuitem" data-lang="fr">FR</li>
@@ -37,10 +39,12 @@
                 </ul>
             </div>
 
-            <a href="collections.html" aria-label="Collections">
+            
+<a href="collections.html" aria-label="Collections">
                 <img src="assets/header/watch.png" class="icon" alt="Collections" data-i18n-alt="media.nav.collections">
             </a>
-            <a href="boutique.html" aria-label="Boutiques">
+            
+<a href="boutique.html" aria-label="Boutiques">
                 <img src="assets/header/broche-de-localisation.png" class="icon" alt="Boutiques" data-i18n-alt="media.nav.boutiques">
             </a>
             <a href="login.html" aria-label="Compte">
@@ -364,12 +368,22 @@ document.addEventListener("DOMContentLoaded", () => {
             <a href="boutique.html" data-i18n="footer.boutiques">Boutiques</a>
         </div>
 
+        
+        
+
+        
+        <div class="footer-lang-slot"></div>
+
+        
         <div class="footer-logos" aria-hidden="true">
             <img src="assets/footer/instagram.png" class="footer-logo" alt="Instagram">
             <img src="assets/footer/tiktok.png" class="footer-logo" alt="TikTok">
             <img src="assets/footer/x.png" class="footer-logo" alt="X">
             <img src="assets/footer/youtube.png" class="footer-logo" alt="YouTube">
         </div>
+
+        
+        
 
         <div class="footer-copy">© 2026 DA VINCI</div>
         <div class="footer-right">
